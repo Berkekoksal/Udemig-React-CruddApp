@@ -1,0 +1,245 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap");
+
+@import "_variables.scss";
+@import "_default.scss";
+.app {
+  padding: 10px;
+  @media (max-width: 600px) {
+    padding: 20px;
+  }
+  @media (max-width: 800px) {
+    padding: 20px 40px;
+  }
+  @media (max-width: 1000px) {
+    padding: 20px 60px;
+  }
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+  div {
+    display: flex;
+    gap: 10px;
+    button {
+      background: white;
+      box-shadow: $shadow-2;
+      font-size: 20px;
+      padding: 10px;
+      display: grid;
+      place-items: center;
+      border-radius: 10px;
+    }
+    .ns {
+      width: 50px;
+      @media (max-width: 650px) {
+        display: none;
+      }
+    }
+    .add {
+      display: flex;
+      gap: 10px;
+      color: white;
+      background: $purple-color;
+      border-radius: 10px;
+      width: 150px;
+      @media (max-width: 550px) {
+        width: 120px;
+      }
+      &:hover {
+        filter: brightness(70%);
+      }
+      span {
+        font-size: 17px;
+      }
+    }
+    form {
+      box-shadow: $shadow;
+      border-radius: 5px;
+      display: flex;
+      gap: 15px;
+      padding: 0 10px;
+      background-color: white;
+      width: 150px;
+
+      button {
+        font-size: 20px;
+        padding: 0;
+        color: $purple-color;
+        box-shadow: none;
+        &:hover {
+          background: none;
+          scale: 1.3;
+        }
+      }
+      input {
+        width: 120%;
+        @media (max-width: 700px) {
+          width: 100px;
+        }
+      }
+    }
+  }
+}
+main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  padding: 65px;
+  .card {
+    position: relative;
+    box-shadow: $shadow-2;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    background: $white-color;
+    border-radius: 15px;
+    transition: all 0.5s;
+    cursor: pointer;
+    &:hover {
+      scale: 1.12;
+      box-shadow: $shadow;
+      .bottom span:nth-of-type(1) {
+        background: $purple-color;
+        color: white;
+      }
+    }
+    h1 {
+      aspect-ratio: 1;
+      background-color: $purple-color;
+      color: white;
+      width: 28%;
+      text-align: center;
+      margin: auto;
+      display: grid;
+      place-items: center;
+      border-radius: 12px;
+      box-shadow: $shadow-2;
+      margin-bottom: 15px;
+      @media (max-width: 500px) {
+        width: 32%;
+      }
+    }
+    p:nth-of-type(1) {
+      color: gray;
+    }
+    p:nth-of-type(2) {
+      color: $purple-color;
+    }
+    .bottom {
+      display: flex;
+      flex-direction: column;
+      p {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        margin-top: 5px;
+      }
+      span:nth-of-type(1) {
+        background: rgba(128, 0, 128, 0.291);
+        padding: 5px;
+        display: grid;
+        place-items: center;
+        border-radius: 5px;
+        color: $purple-color;
+      }
+      span:nth-of-type(2) {
+        font-weight: 600;
+      }
+    }
+    .head-button {
+      position: absolute;
+      right: 20px;
+      top: 20px;
+      display: flex;
+      gap: 10px;
+
+      button {
+        display: grid;
+        place-items: center;
+        aspect-ratio: 1;
+        font-size: 18px;
+        color: white;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        &:nth-child(1) {
+          background: rgb(255, 0, 0);
+        }
+        &:nth-child(2) {
+          background: rgb(0, 30, 255);
+        }
+      }
+    }
+  }
+}
+.modal {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.638);
+  inset: 0; //* top: 0 ; left:0; right:0 ; bottom:0; değerlerinin birleşimi.
+  display: grid;
+  place-items: center;
+  backdrop-filter: blur(3px);
+  .modal-inner {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    min-width: 450px;
+    width: 50%;
+    max-width: 700px;
+    min-height: 550px;
+    @media (min-width: 600px) {
+      padding: 20px 30px;
+    }
+  }
+  .modal-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    button {
+      font-size: 30px;
+      width: 45px;
+      aspect-ratio: 1;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+    }
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+    .field {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      label {
+        font-weight: 600;
+      }
+      input {
+        box-shadow: $shadow-2;
+        border-radius: 12px;
+      }
+    }
+    .buttons {
+      display: flex;
+      justify-content: end;
+      gap: 10px;
+      button {
+        padding: 5px 20px;
+
+        &:nth-of-type(1) {
+          background: rgba(128, 128, 128, 0.58);
+        }
+        &:nth-of-type(2) {
+          background: $purple-color;
+          color: white;
+        }
+      }
+    }
+  }
+}

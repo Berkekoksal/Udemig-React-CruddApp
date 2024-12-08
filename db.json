@@ -1,0 +1,124 @@
+{
+  "contact": [
+    {
+      "name": "Lena Mercedes",
+      "position": "Developer",
+      "company": "Oto Studios",
+      "phone": "+41 524 58 44",
+      "email": "lenamercedess@gmail.com",
+      "id": "ascsd"
+    },
+    {
+      "id": "fghjk",
+      "name": "John Doe",
+      "position": "Project Manager",
+      "company": "Tech Innovators",
+      "phone": "+44 789 45 33",
+      "email": "johndoe@techinnovators.com"
+    },
+    {
+      "id": "ujdhs",
+      "name": "Sophia Larson",
+      "position": "UI/UX Designer",
+      "company": "Creative Minds",
+      "phone": "+1 123 456 7890",
+      "email": "sophia.larson@creativeminds.co"
+    },
+    {
+      "id": "xyz12",
+      "name": "Mark Spencer",
+      "position": "Data Scientist",
+      "company": "Data Insights",
+      "phone": "+61 423 56 78 99",
+      "email": "mark.spencer@datainsights.ai"
+    },
+    {
+      "id": "lmno9",
+      "name": "Amelia Johnson",
+      "position": "Software Engineer",
+      "company": "CodeBase Inc.",
+      "phone": "+31 6 1234 5678",
+      "email": "ameliajohnson@codebase.com"
+    },
+    {
+      "id": "abcd1",
+      "name": "Ethan Miller",
+      "position": "Marketing Specialist",
+      "company": "Brandify",
+      "phone": "+49 173 56 32 44",
+      "email": "ethan.miller@brandify.com"
+    },
+    {
+      "id": "efgh2",
+      "name": "Emily White",
+      "position": "Content Writer",
+      "company": "StoryCraft",
+      "phone": "+33 652 41 24 58",
+      "email": "emily.white@storycraft.org"
+    },
+    {
+      "id": "ijkl3",
+      "name": "Michael Brown",
+      "position": "Cybersecurity Analyst",
+      "company": "SecureNet",
+      "phone": "+1 987 654 3210",
+      "email": "michael.brown@securenet.com"
+    },
+    {
+      "id": "mnop4",
+      "name": "Jessica Lee",
+      "position": "Product Manager",
+      "company": "NextGen Solutions",
+      "phone": "+81 90 1234 5678",
+      "email": "jessica.lee@nextgensolutions.co"
+    },
+    {
+      "id": "qrst5",
+      "name": "Daniel Wilson",
+      "position": "Network Engineer",
+      "company": "Connectify",
+      "phone": "+65 9123 4567",
+      "email": "daniel.wilson@connectify.net"
+    },
+    {
+      "id": "uvwx6",
+      "name": "Olivia Martinez",
+      "position": "Graphic Designer",
+      "company": "DesignPro",
+      "phone": "+34 657 43 21 89",
+      "email": "olivia.martinez@designpro.com"
+    },
+    {
+      "id": "yzab7",
+      "name": "Benjamin Davis",
+      "position": "AI Researcher",
+      "company": "NeuroLabs",
+      "phone": "+91 98765 43210",
+      "email": "benjamin.davis@neurolabs.ai"
+    },
+    {
+      "id": "cdef8",
+      "name": "Chloe Harris",
+      "position": "HR Specialist",
+      "company": "PeopleFirst",
+      "phone": "+86 138 0012 3456",
+      "email": "chloe.harris@peoplefirst.hr"
+    },
+    {
+      "id": "ghij9",
+      "name": "Lucas Smith",
+      "position": "DevOps Engineer",
+      "company": "CloudWorks",
+      "phone": "+1 800 123 4567",
+      "email": "lucas.smith@cloudworks.dev"
+    },
+    {
+      "id": "klmn10",
+      "name": "Ava Roberts",
+      "position": "Sales Executive",
+      "company": "MarketReach",
+      "phone": "+55 21 9987 6543",
+      "email": "ava.roberts@marketreach.biz"
+    }
+  ]
+}

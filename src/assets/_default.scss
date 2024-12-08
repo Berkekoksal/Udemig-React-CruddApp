@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #c4c4cc;
+  color: black;
+  font-family: "cairo";
+}
+
+button {
+  border: none;
+  outline: none;
+  background: transparent;
+  font-family: "cairo";
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.4s;
+  &:hover {
+    background: rgba(128, 128, 128, 0.244);
+    filter: brightness(50%);
+  }
+}
+input {
+  border: none;
+  outline: none;
+  padding: 5px 20px;
+  font-family: "cairo";
+  border-radius: 5px;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
